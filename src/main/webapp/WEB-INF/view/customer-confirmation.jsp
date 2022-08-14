@@ -11,16 +11,9 @@
 			<div class="row">
 				<div class="col-md-6 offset-md-3">
 					<div class="card mt-5 mb-5 p-5">
-						<div class="card-body p-5">
-							<p class="lead text-center">The student is confirmed: ${ student.firstName } ${ student.lastName }</p>
-							<p class="lead text-center">Favorite Country: ${ student.country }</p>
-							<div class="text-center">
-								<ul>
-									<c:forEach var="temp" items="${ student.operatingSystems }">
-										<li> ${temp} </li>
-									</c:forEach>
-								</ul>
-							</div>			
+						<div class="card-body p-1">
+							<p class="lead"><b>The customer was confirmed:</b>  ${customer.firstName} ${customer.lastName} </p>
+							<p class="lead"><b>Free Passes:</b> ${customer.freePasses} </p>
 						</div>
 					</div>
 				</div>
